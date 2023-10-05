@@ -16,7 +16,7 @@ def run_advise_chain(question_dict):
                             temperature=0)
 
     chain = LLMChain(llm=model,
-                     verbose=True,
+                     verbose=False,
                      prompt=create_advise_prompt)
 
     with open('./data/justifications_message.txt', 'r') as f:
