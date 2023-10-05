@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "latarnik-gpt"
+version = "0.1.0"
+description = ""
+authors = ["spiechaczek <szymon.p@curvestone.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<3.13"
+pandas = "^2.1.1"
+streamlit-antd-components = "^0.2.1"
+altair = "<5"
+langchain = "^0.0.308"
+openai = "^0.28.1"
+python-dotenv = "^1.0.0"
+streamlit = "^1.27.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
