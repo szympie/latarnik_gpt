@@ -13,7 +13,7 @@ from llm_logic import run_advise_chain
 def prepare_questions_dict():
     df = pd.read_csv('./data/justifications.csv')
     questions = df['question'].unique()
-    questions_dicts = [{'question': question, 'user_comment': 'Nie mam zdania'} for question in questions]
+    questions_dicts = [{'question': question, 'user_comment': ''} for question in questions]
     return questions_dicts
 
 

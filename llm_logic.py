@@ -6,8 +6,12 @@ from prompts import create_advise_prompt
 def question_dict_to_text(question_dict):
     text = ''
     for question in question_dict:
+        if question['user_comment'] == '':
+            comment = 'Nie mam zdania'
+        else:
+            comment = question['user_comment']
         text += f"Stwierdzenie: \n{question['question']}\n\n"
-        text += f"Odpowiedź użytkownika:\n{question['user_comment']}\n\n"
+        text += f"Odpowiedź użytkownika:\n{comment}\n\n"
     return text
 
 
